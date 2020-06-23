@@ -1,62 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<title>Corona Update Bd</title>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
- body, html {
-  height: 100%;
-  margin: 0;
-  background-color: black;
-  
-}
-
-
-
-
-body {margin:0;}
-
-.icon-bar {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.icon-bar a {
-  float: left;
-  width: 20%;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-}
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.active {
-  background-color: #4CAF50;
-}
-
-  
+ 
 .blue {
-    background: black;
+    background: grey;
 }
 .news {
     box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
        width: 400px;
     margin: 20px auto;
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 0px;
     padding: 1px;
     -webkit-user-select: none;
 }
 .news span {
-    float: up;
+    float: left;
     color: #fff;
     padding: 5px;
     position: relative;
@@ -72,62 +36,102 @@ body {margin:0;}
     width: 450px;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background-color: #FFFFE0; 
+}
 
+/* Style the header */
+.header {
+  background-color: grey;
+  padding: 0px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+	 overflow: scroll;
+  }
+}
 </style>
 </head>
 <body>
 
-
-
-<div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-facebook"></i></a> 
-  <a href="#"><i class="fa fa-user-md"></i></a> 
-  <a href="#"><i class="fa fa-smile-o"></i></a> 
-  <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="#"><i class="fa fa-smile-o fa-spin fa-1x fa-fw"></i></a> 
-</div>
-
-
-<div class="news blue">
+<div class="header">
+  <h1>ছাগলনাইয়া নিউজ ২৪/৭</h1>
+  <div class="news blue">
  <span>মোট আক্রান্ত ১,১৫,৭৮৬ |সুস্থ ৪৬,৭৫৫</span><span class="text1"><marquee>  |ফেনী ৬০৯| | নারায়ণগঞ্জ ৪,৪৯০| | গাজীপুর  ২,৫১১|  | কুমিল্লা  ২,২১৭|  |কক্সবাজার  ১,৬৮৮|  |নোয়াখালী ১,৬৩২| |ময়মনসিংহ ১,২০৪|  |মাদারীপুর ৪৬৮| |দিনাজপুর ৪৫৮|
 |জামালপুর ৪৪০| |মুন্সীগঞ্জ  ১,৬৬১| </marquee></span>
 </div> 
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-e30cf501-24ed-4414-893e-ee3b3b41de00"></div>
-
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-138831b3-be77-49c9-b0d6-2a48cf38b173"></div>
-
-<div class="w3-card-4">
-<div class="w3-container w3-theme w3-card">
-  <h1>ব্রেকিং নিউজ </h1>
 </div>
 
-<div class="w3-container w3-text-theme">
-<h2><marquee>পদ্মাসেতুর রেল প্রকল্পের ঠিকাদারি প্রতিষ্ঠানে চাঁদা দাবি, আটক দুই</marquee></h2></div>
-
-<ul class="w3-ul w3-border-top">
-  <li class="w3-theme-l5">
-  <a class="w3-button w3-xlarge w3-circle w3-theme-action"
-  style="position:fixed;top:48px;right:24px;">C</a>
-  <p><marquee>আনসারে করোনা আক্রান্তের সংখ্যা ছয়শ ছাড়াল, সুস্থ ৩২৮</marquee></p>
-  </li>
-  <li class="w3-theme-l4">
-    <p><marquee>কুমিল্লায় একদিনে করোনা থেকে সুস্থ ২৪১ জন</marquee></p>
-  </li>
-  <li class="w3-theme-l3">
-    <p><marquee>পদ্মাসেতুর রেল প্রকল্পের ঠিকাদারি প্রতিষ্ঠানে চাঁদা দাবি, আটক দুই</marquee></p>
-  </li>
- 
+<div class="topnav">
+ <a href="#"><i class="fa fa-smile-o fa-spin fa-1x fa-fw"></i></a> 
+  <a href="#"><i class="fa fa-facebook fa-spin fa-1x fa-fw"></i></a> 
   
-</ul>
+  <a href="#"><i class="fa fa-user-md"></i></a> 
 </div>
 
-
-
+<div class="row">
+  <div class="column">
+    <h2></h2>
+    <p><iframe src="" width="700" height="400"></iframe></p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
 </div>
+
 </body>
-</head>
 </html>
