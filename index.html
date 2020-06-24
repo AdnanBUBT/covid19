@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="">
 <title>CSS Website Layout</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
- 
+
 
 * {
   box-sizing: border-box;
@@ -15,12 +14,12 @@
 
 body {
   margin: 0;
-  background-color: grey; 
+  background-color: #FFFFE0; 
 }
 
 /* Style the header */
 .header {
-  background-color: white;
+  background-color: grey;
   padding: 0px;
   text-align: center;
 }
@@ -28,14 +27,14 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: green;
 }
 
 /* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: green;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -66,6 +65,7 @@ body {
 @media screen and (max-width:600px) {
   .column {
     width: 100%;
+	 overflow: scroll;
   }
 }
 </style>
@@ -74,35 +74,34 @@ body {
 
 <div class="header">
   <h1>ছাগলনাইয়া নিউজ ২৪/৭</h1>
-
 </div>
+<iframe src="https://covid.codeofamdad.com/widget2" Height="250px" width="100%" frameborder="0"><iframe>
+
+
+
 
 <div class="topnav">
- <a href="#"><i class="fa fa-smile-o"></i></a> 
-  <a href="#"><i class="fa fa-facebook"></i></a> 
+ <a href="#"><i class="fa fa-smile-o fa-spin fa-1x fa-fw"></i></a> 
+  <a href="#"><i class="fa fa-facebook fa-spin fa-1x fa-fw"></i></a> 
   
   <a href="#"><i class="fa fa-user-md"></i></a> 
 </div>
- <iframe src="https://covid.codeofamdad.com/widget2" Height="250px" width="100%" frameborder="0"><iframe>
+
 <div class="row">
   <div class="column">
     <h2></h2>
-    <p></p>
+    <p><iframe src="" width="700" height="400"></iframe></p>
   </div>
   
   <div class="column">
     <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
-	eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci 
-	in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p><iframe src="https://covid.codeofamdad.com/widget1" height="300" width="300" frameborder="0"></iframe></p>
   </div>
   
   
   <div class="column">
     <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. 
-	Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam
-	placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
   </div>
 </div>
 
