@@ -2,6 +2,7 @@
 <html>
 <title><img src="abn.jpg"></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: teal;
@@ -12,6 +13,9 @@
                 text-align: center;
                 margin: auto;
           }
+        .active{background: darkblue; border-radius: 2px; }
+        .footer a:hover{background: white;}
+        .footer p:hover{background: darkblue;}
 
 #i1, #i2, #i3, #i4, #i5{ display: none;}
 
@@ -254,7 +258,9 @@
 	</div>
 		
 </div>
-  <div class="footer"><p>All right reserved by@Adnan Mahmud</p></div>
+  <div class="footer"><p>All right reserved by@Adnan Mahmud</p>
+    <a class="active" href="#"><i class="fa fa-facebook"></i></a> 
+    </div>
 <script>
 function openLeftMenu() {
   document.getElementById("leftMenu").style.display = "block";
